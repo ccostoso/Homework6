@@ -23,16 +23,30 @@
 
         <section class="card-body row flex-row-reverse">
             <div class="col-12 col-xl-4">
-                <form id="search" class="form-inline">        
+                <div id="search" class="input-group mb-3">        
                     <input id="search-input" type="text" class="form-control" placeholder="Search">
-                    <button id="search-button" type="submit" class="btn btn-outline-info ml-1">Submit</button>
-                </form>
+                    <div class="input-group-append">
+                        <button id="search-button" type="submit" class="btn btn-outline-info ml-1">Submit</button>
+                    </div>
+                </div>
 
-                <p class="text-weight-bold mt-3">Instructions:</p>
-                <p>Select a button from the list at the top of the page to display 10 GIF images in the display window.</p>
-                <p>If you'd like to add your own animal to the list, create a new button by typing in the text box above and clicking "Submit"!</p>
-                <p>To animate an image, click on the image to make it move. To end animation, click on the image again.</p>
-                <p>NOTE: not all images can be animated.</p>
+                <article class="accordion">
+                    <div class="card">            
+                        <div class="card-header" data-toggle="collapse" data-target="#instructions"
+                        aria-expanded="false" aria-controls="instructions">
+                            <span class="card-title">Click Here for Instructions</span>
+                        </div>
+                        <div id="instructions" class="collapse">
+                            <div class="card-body">
+                                <p class="card-text">Select a button from the list at the top of the page to display 10 GIF images in the display window.</p>
+                                <p class="card-text">If you'd like to add your own animal to the list, create a new button by typing in the text box above and clicking "Submit"!</p>
+                                <p class="card-text">To animate an image, click on the image to make it move. To end animation, click on the image again.</p>
+                                <p class="card-text">NOTE: not all images can be animated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
             </div>
 
             <div class="col-12 col-xl-8">

@@ -70,14 +70,21 @@ $(document).on("click", ".animal-btn", function() {
 
             var animalDiv = $("<div>");
             animalDiv.attr("data-index", i);
-            animalDiv.css("display", "inline-block").css("margin-right", "1rem");
-            var animalImage = $("<img />").attr("data-animate", ele.images.fixed_width.url).attr("data-still", ele.images.fixed_width_still.url).attr("data-state", "still");
+            animalDiv.addClass("animal-div");
+
+            var animalImage = $("<img />").attr({
+                "data-animate": ele.images.fixed_width.url,
+                "data-still": ele.images.fixed_width_still.url,
+                "data-state": "still",
+                "src": ele.images.fixed_width_still.url,
+            });
             animalImage.addClass("animal-image");
-            animalImage.attr("src", ele.images.fixed_width_still.url);
-            animalImage.css("max-width", "300px");
+
             var animalRating = $("<p>").html("<span class=\"font-weight-bold\">Rating: </span>" + ele.rating.toUpperCase());
+
             animalDiv.append(animalImage);
             animalDiv.append(animalRating);
+            
             $("#animal-display").append(animalDiv);
         })
     })

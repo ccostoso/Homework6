@@ -6,6 +6,16 @@ header {
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
+.animal-div {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.animal-image {
+    max-width: 300px;
+    max-height: 150px;
+}
+
 footer {
     background-color: #3dc8ff;
 }
