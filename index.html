@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIPHY App</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand navbar-light">
+            <a href="#" class="navbar-brand mr-auto">GIPHY App</a>
+        </nav>
+    </header>
+
+    <main class="card container flex-column my-4 py-2">
+        <nav id="animal-buttons" class="card-body">
+            
+        </nav>
+
+        <section class="card-body row flex-row-reverse">
+            <div class="col-12 col-xl-4">
+                <form id="search" class="form-inline">        
+                    <input id="search-input" type="text" class="form-control" placeholder="Search">
+                    <button id="search-button" type="submit" class="btn btn-outline-info ml-1">Submit</button>
+                </form>
+
+                <p class="text-weight-bold mt-3">Instructions:</p>
+                <p>Select a button from the list at the top of the page to display 10 GIF images in the display window.</p>
+                <p>If you'd like to add your own animal to the list, create a new button by typing in the text box above and clicking "Submit"!</p>
+                <p>To animate an image, click on the image to make it move. To end animation, click on the image again.</p>
+                <p>NOTE: not all images can be animated.</p>
+            </div>
+
+            <div class="col-12 col-xl-8">
+                <div id="animal-display" class="card-body">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center mt-auto py-3">
+        Carlos Costoso
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

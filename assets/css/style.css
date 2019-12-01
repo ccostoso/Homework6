@@ -1,0 +1,11 @@
+header {
+    background-color: #ffb83d;
+}
+
+.btn-outline-info:hover {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background-color: #3dc8ff;
+}
